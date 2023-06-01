@@ -1,0 +1,7 @@
+const timeEl = document.querySelector('#time')
+const dateEl = document.querySelector('#date')
+const currentWeatherItemsEl = document.querySelector('#current-weather-items')
+const timeZone = document.querySelector('#time-zone')
+const countryEl = document.querySelector('#country')
+const weatherForecastEl = document.querySelector('#weather-forecast')
+const currentTempEl = document.querySelector('#current-temp')
