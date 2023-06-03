@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
 
 <body>
@@ -23,66 +26,68 @@
                 <div class="others" id="current-weather-items">
                     <div class="weather-item">
                         <div>Humidity</div>
-                        <div>95%</div>
+                        <div id="humidity">-</div>
                     </div>
                     <div class="weather-item">
-                        <div>Preasure</div>
-                        <div>121</div>
+                        <div>Pressure</div>
+                        <div id="pressure">-</div>
                     </div>
                     <div class="weather-item">
                         <div>Wind speed</div>
-                        <div>25km/h</div>
+                        <div id="wind-speed">-</div>
                     </div>
-                    
                 </div>
             </div>
+
             <div class="place-container">
-                <div class="time-zone" id="time-zone">Europe</div>
-                <div id="country" class="country">AZ</div>
+                <div class="time-zone" id="time-zone">-</div>
+                <div id="country" class="country">-</div>
             </div>
         </div>
 
-
-
+        <div class="search">
+            <div class="searchSection">
+                <button id="locationButton"><span><i class="fa-solid fa-location"></i></span></button>
+                <div><input type="text" id="inputSearch" placeholder="Location"></div>
+                <button id="button"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+        </div>
     </div>
 
     <div class="future-forecast">
         <div class="today" id="current">
-            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <img src="" alt="weather icon" class="w-icon" id="current-icon">
             <div class="other">
                 <div class="day">Monday</div>
-            <div class="temp">Night - 22&#176; C</div>
-            <div class="temp">Day - 31&#176; C</div>
+                <div class="temp" id="current-night-temp">Night - <span>-</span></div>
+                <div class="temp" id="current-day-temp">Day - <span>-</span></div>
             </div>
-
         </div>
 
         <div class="weather-forecast" id="weather-forecast">
             <div class="weather-forecast-item">
                 <div class="day">Tue</div>
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-
-                <div class="temp">Night - 22&#176; C</div>
-                <div class="temp">Day - 31&#176; C</div>
+                <img src="" alt="weather icon" class="w-icon" id="forecast-icon-1">
+                <div class="temp" id="forecast-night-temp-1">Night - <span>-</span></div>
+                <div class="temp" id="forecast-day-temp-1">Day - <span>-</span></div>
             </div>
             <div class="weather-forecast-item">
                 <div class="day">Wed</div>
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-
-                <div class="temp">Night - 22&#176; C</div>
-                <div class="temp">Day - 31&#176; C</div>
+                <img src="" alt="weather icon" class="w-icon" id="forecast-icon-2">
+                <div class="temp" id="forecast-night-temp-2">Night - <span>-</span></div>
+                <div class="temp" id="forecast-day-temp-2">Day - <span>-</span></div>
             </div>
             <div class="weather-forecast-item">
                 <div class="day">Thu</div>
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-
-                <div class="temp">Night - 22&#176; C</div>
-                <div class="temp">Day - 31&#176; C</div>
+                <img src="" alt="weather icon" class="w-icon" id="forecast-icon-3">
+                <div class="temp" id="forecast-night-temp-3">Night - <span>-</span></div>
+                <div class="temp" id="forecast-day-temp-3">Day - <span>-</span></div>
             </div>
         </div>
     </div>
 
-        <script src="./assets/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.6.2/fetch.min.js"></script>
+    <script src="./assets/index.js"></script>
 </body>
 
 </html>

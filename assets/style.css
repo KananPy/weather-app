@@ -59,6 +59,51 @@ body{
     font-weight: 700;
 }
 
+.search{
+    margin-left: 40%;
+}
+
+.searchSection input {
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--border);
+}
+
+
+.searchSection input:focus {
+    outline: none;
+}
+
+::placeholder {
+   text-align: center;
+}
+
+.searchSection{
+    display: flex;
+    margin-top: 60px;
+
+}
+
+.searchSection button {
+    background-color: var(--border);
+    width: 50px;
+    height: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    background-color: #7c858b;
+    transition: transform 0.3s ease-in-out
+}
+
+
+
 .current-info .others{
     display: flex;
     flex-direction: column;
@@ -67,11 +112,13 @@ body{
     border-radius: 10px;
     margin: 10px 0;
     border: 1px solid #eee;
+    
 }
 
 .current-info .others .weather-item{
     display: flex;
     justify-content: space-between;
+
 }
 
 .future-forecast{
